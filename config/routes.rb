@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get "view/field"
   # additional helpers
   get "view/html5"
+  # select method
+  get "view/select"
 end
