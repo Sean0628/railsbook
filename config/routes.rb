@@ -5,6 +5,16 @@ Rails.application.routes.draw do
   resources :users
   resources :books
 
+  # form_tag
   get "view/keyword"
   post "keyword/search"
+  # form_tag with model
+  get "view/form_tag"
+  post "view/create"
+  # form_for
+  get "view/form_for"
+  # several helpers
+  get "view/field"
+  # additional helpers
+  get "view/html5"
 end
