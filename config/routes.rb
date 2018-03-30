@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   get "view/html5"
   # select method
   get "view/select"
+  # sample_format
+  get "view/simple_format"
 end
