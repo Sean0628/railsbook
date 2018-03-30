@@ -25,4 +25,6 @@ Rails.application.routes.draw do
   get "view/truncate"
   # excerpt helper
   get "view/excerpt"
+  # highlight helper
+  get "view/highlight"
 end
