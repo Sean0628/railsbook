@@ -1,6 +1,12 @@
 class ViewController < ApplicationController
   before_action :set_book, only: [:form_tag, :form_for, :field, :html5, :select]
 
+  def index
+  end
+
+  def new
+  end
+
   def form_tag
   end
 

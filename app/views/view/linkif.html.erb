@@ -1,0 +1,18 @@
+<% @user = User.new %>
+<h2>link_to_if:</h2><br>
+<%= link_to_if @user.nil?, "login", controller: :view, action: :index %><br>
+<h2>link_to_unless:</h2><br>
+<%= link_to_unless @user, "login", action: :index %><br>
+<h2>link_to_if with a block:</h2><br>
+<%= link_to_if @user.nil?, "login", action: :index do |name|
+  link_to "mypage", action: :new
+end %><br>
+<h2>link_to_unless_current:</h2><br>
+<%= link_to_unless_current "Top", action: :linkif %> |
+<%= link_to_unless_current "Details", action: :index %>
+
+<h2>mail_to</h2><br>
+<%= mail_to "xxxxxx@gmail.com" %><br>
+
+<h2>mail_to</h2><br>
+<%= mail_to "xxxxxx@gmail.com", "お問い合わせはこちら" %><br>

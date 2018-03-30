@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :authors
   resources :users
   resources :books
+  resources :view, only: [:index, :new]
 
   # form_tag
   get "view/keyword"
@@ -33,4 +34,6 @@ Rails.application.routes.draw do
   get "view/format"
   # number * method
   get "view/number_to"
+  # linkif method
+  get "view/linkif"
 end
