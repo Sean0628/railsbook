@@ -23,4 +23,6 @@ Rails.application.routes.draw do
   get "view/simple_format"
   # truncate helper
   get "view/truncate"
+  # excerpt helper
+  get "view/excerpt"
 end
