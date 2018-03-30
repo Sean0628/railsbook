@@ -21,4 +21,6 @@ Rails.application.routes.draw do
   get "view/select"
   # sample_format
   get "view/simple_format"
+  # truncate helper
+  get "view/truncate"
 end
