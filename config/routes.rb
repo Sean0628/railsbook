@@ -27,4 +27,6 @@ Rails.application.routes.draw do
   get "view/excerpt"
   # highlight helper
   get "view/highlight"
+  # sanitize helper
+  get "view/sanitize"
 end
