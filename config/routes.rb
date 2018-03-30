@@ -29,4 +29,8 @@ Rails.application.routes.draw do
   get "view/highlight"
   # sanitize helper
   get "view/sanitize"
+  # sprintf method
+  get "view/format"
+  # number * method
+  get "view/number_to"
 end

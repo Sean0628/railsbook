@@ -1,0 +1,26 @@
+<h2>number_to_currency</h2><br>
+<%= number_to_currency(12345) %><br>
+<h2>number_to_currency</h2><br>
+<%= number_to_currency(12345, unit: "円", precision: 0, format: "%n%u") %><br>
+<h2>number_to_human</h2><br>
+<%= number_to_human(1234567) %><br>
+<h2>number_to_human</h2><br>
+<%= number_to_human(1234567, units: { unit: "", million: "百万" }) %><br>
+<h2>number_to_human_size</h2><br>
+<%= number_to_human_size(123456) %>
+<h2>number_to_percentage</h2><br>
+<%= number_to_percentage(12.3456) %><br>
+<h2>number_with_delimiter</h2><br>
+<%= number_with_delimiter(1234567.89, delimiter: " ", separator: ",") %><br>
+<h2>number_with_precision</h2><br>
+<%= number_with_precision(123.4567) %>
+<h2>number_with_precision</h2><br>
+<%= number_with_precision(123.4567, precision: 5) %><br>
+<h2>number_with_precision</h2><br>
+<%= number_with_precision(123.4567, precision: 5, significant: true) %><br>
+<h2>number_with_precision</h2><br>
+<%= number_with_precision(123.4, precision: 5, strip_insignificant_zeros: true) %><br>
+
+<h2>strftime method</h2><br>
+<% @current_time = Time.now %>
+<%= @current_time.strftime("%Y年%m月%d日 %H:%M:%S") %>
