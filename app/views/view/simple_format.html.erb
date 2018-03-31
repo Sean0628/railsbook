@@ -1,0 +1,19 @@
+<%
+  article = <<EOL
+  WINGSニュース特別号
+
+  こんにちは。
+  WINGSプロジェクトの山田です。
+  本日のおすすめは、鯛の刺し盛りです。
+  <script>alert('Happy rails');</script>
+EOL
+%>
+<h2>simple_format使用：</h2><br>
+<%= simple_format(article, class: :article) %>
+
+<h2>simple_format使用なし：</h2><br>
+<%= article %><br>
+
+<h2>optionあり：</h2><br>
+<%= simple_format(article, { class: :article },
+                  { sanitize: false, wrapper_tag: "blockquote" }) %>

@@ -1,0 +1,29 @@
+<%= form_for(@book) do |f| %>
+  <h2>色選択ボックス：</h2><br>
+  <%= f.color_field :isbn %><br>
+  <h2>日付入力ボックス：</h2><br>
+  <%= f.date_field :published %><br>
+  <h2>時刻ボックス：</h2><br>
+  <%= f.time_field :published %><br>
+  <h2>日付時刻入力ボックス：</h2><br>
+  <%= f.datetime_field :published %><br>
+  <h2>日付時刻入力ボックス(local)：</h2><br>
+  <%= f.datetime_local_field :published %><br>
+  <h2>月入力ボックス：</h2><br>
+  <%= f.month_field :published %>
+  <h2>週入力ボックス：</h2><br>
+  <%= f.week_field :published %><br>
+  <h2>メール入力ボックス：</h2><br>
+  <%= f.email_field :isbn, size: 25, maxlength: 30 %><br>
+  <h2>数値入力ボックス：</h2><br>
+  <%= f.number_field :price, min: 0, max: 10000, step: 10 %><br>
+  <h2>スライダー： </h2><br>
+  <%= f.range_field :price, min: 0, max: 10000 %><br>
+  <h2>検索ボックス：</h2><br>
+  <%= f.search_field :isbn, size: 10, maxlength: 15 %><br>
+  <h2>電話番号入力ボックス：</h2><br>
+  <%= f.telephone_field :isbn, size: 15, maxlength: 20 %><br>
+  <h2>URL入力ボックス：</h2><br>
+  <%= f.url_field :isbn, size: 10, maxlength: 15 %><br>
+<% end %>
+

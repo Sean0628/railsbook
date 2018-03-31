@@ -1,0 +1,16 @@
+<% msg = "RailsはRubyベースのフレームワークです。
+Railsに影響を受けたフレームワークには、Catalystやsymfonyなどがあります。" %>
+
+<h2>excerpt:</h2><br>
+<%= excerpt(msg, "Catalyst", radius: 10) %><br>
+
+<h2>excerpt w/ another keyword:</h2><br>
+<%= excerpt(msg, "Rails", radius: 10) %><br>
+
+<h2>excerpt w/ omossion "~~~":</h2><br>
+<%= excerpt(msg, "Catalyst", radius: 10, omission: "~~~") %><br>
+
+<h2>excerpt w/ a keyword which does not exist:</h2><br>
+<%= excerpt(msg, "PHP", radius: 10) %>
+
+

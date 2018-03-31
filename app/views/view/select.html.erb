@@ -1,0 +1,22 @@
+<%= form_for(@book) do |f| %>
+  <h2>select_form:</h2><br>
+  <%= f.select :publish, ["技術評論社", "翔泳社", "日経BP社"],
+    { include_blank: "選択してください" }, class: "pub" %><br>
+  <h2>select_form in hash:</h2><br>
+  <%= f.select :publish,
+    { "技術評論社" => 1, "翔泳社" => 2, "日経BP社" => 3 } %><br>
+  <h2>select_form in array:</h2><br>
+  <%= f.select(:publish,
+                [["技術評論社", 1], ["翔泳社", 2], ["日経BP社", 3]]) %><br>
+  <h2>select_form w/ multiple true:</h2><br>
+  <%= f.select :publish, ["技術評論社", "翔泳社", "日経BP社"],
+    { include_blank: "選択してください" }, multiple: true %>
+<% end %>
+
+<h2>select_tag:</h2><br>
+<%= select_tag "publish", raw('<option value="1">技術評論社</option>
+<option value="2">翔泳社</option><option value="3">日経BP社</option>') %>
+
+<h2>options_for_select method:</h2><br>
+<%= select_tag "publish", options_for_select(
+  { "技術評論社" => 1, "翔泳社" => 2, "日経BP社" => 3 }, 2) %>
