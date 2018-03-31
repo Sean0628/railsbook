@@ -22,6 +22,11 @@ class ViewController < ApplicationController
   def select
   end
 
+  def nest
+    @msg = "今日もいい天気です。"
+    render layout: "child"
+  end
+
   private
   def set_book
     @book = Book.new

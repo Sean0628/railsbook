@@ -36,4 +36,8 @@ Rails.application.routes.draw do
   get "view/number_to"
   # linkif method
   get "view/linkif"
+  # customized helper methods
+  get "view/helper3"
+  # layouts
+  get "view/nest"
 end
